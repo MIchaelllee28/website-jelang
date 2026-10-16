@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "@/components/ui/button";
+import { imagePath } from "@/lib/image";
 
 export default function HeroSection() {
   return (
@@ -24,7 +25,7 @@ export default function HeroSection() {
 
         <div className="relative h-[240px] w-full overflow-hidden bg-sand md:h-[460px]">
           <Image
-            src="/images/hero-mobile.jpg"
+            src={imagePath("/images/hero-mobile.jpg")}
             alt="Jalan sore di Kayutangan, Malang"
             fill
             priority
@@ -32,7 +33,7 @@ export default function HeroSection() {
             sizes="100vw"
           />
           <Image
-            src="/images/hero-desktop.jpg"
+            src={imagePath("/images/hero-desktop.jpg")}
             alt="Suasana kota menjelang malam"
             fill
             priority

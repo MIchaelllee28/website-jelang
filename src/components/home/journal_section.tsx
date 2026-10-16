@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { imagePath } from "@/lib/image";
 
 const STORIES = [
   {
@@ -6,8 +7,8 @@ const STORIES = [
     title: "Menyapa Kayutangan",
     description: "Bangunan lama, obrolan baru.",
     hideDescriptionOnDesktop: true,
-    desktopSrc: "/images/story-kayutangan.jpg",
-    mobileSrc: "/images/story-kayutangan-mobile.jpg",
+    desktopSrc: imagePath("/images/story-kayutangan.jpg"),
+    mobileSrc: imagePath("/images/story-kayutangan-mobile.jpg"),
     alt: "Suasana malam di Kayutangan",
     badge: null,
   },
@@ -16,8 +17,8 @@ const STORIES = [
     title: "Sore di Ijen",
     description: "Menikmati kota dari trotoarnya.",
     hideDescriptionOnDesktop: false,
-    desktopSrc: "/images/story-ijen.jpg",
-    mobileSrc: "/images/story-ijen-mobile.jpg",
+    desktopSrc: imagePath("/images/story-ijen.jpg"),
+    mobileSrc: imagePath("/images/story-ijen-mobile.jpg"),
     alt: "Boulevard Ijen dari atas",
     badge: "IJEN SORE",
   },
@@ -26,8 +27,8 @@ const STORIES = [
     title: "Berhenti buat jajan",
     description: "Karena jalan juga perlu jeda.",
     hideDescriptionOnDesktop: false,
-    desktopSrc: "/images/story-jajan.jpg",
-    mobileSrc: "/images/story-jajan-mobile.jpg",
+    desktopSrc: imagePath("/images/story-jajan.jpg"),
+    mobileSrc: imagePath("/images/story-jajan-mobile.jpg"),
     alt: "Jajanan di pinggir jalan",
     badge: null,
   },
